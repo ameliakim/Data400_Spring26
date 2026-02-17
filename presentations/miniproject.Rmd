@@ -173,16 +173,12 @@ hist(combined_nfl$Win_Pct,
 
 # Correlation
 
-```{r, echo=FALSE}
+```{r}
 cor(combined_nfl$Volume_USD,
     combined_nfl$Win_Pct)
 ```
-
-Interpretation:
-- Measures linear association
-- Range: -1 to 1
-
 ---
+
 # Correlation Heatmap
 
 ```{r, echo=FALSE, fig.width=12, fig.height=8}
@@ -233,45 +229,55 @@ summary(model)
 
 # Key Findings
 
-- Weak / moderate / strong correlation?  
-- Does higher trading volume predict higher win %?  
-- Is the relationship statistically significant?
+- Trading volume is highly concentrated among a few teams  
+- Win percentage is more evenly distributed  
+- Moderate negative correlation (-0.65) between volume and win %  
+- Regression shows statistically significant inverse relationship  
+- Volume explains ~42% of variation in team performance  
+
+### Overall Takeaway:
+Higher Polymarket trading volume is associated with *lower* team win percentage in this sample.
+
 
 ---
-## Implications
-#### Societal
+# Implications for Stakeholders
+**NFL Teams**
+- High trading volume may reflect fan engagement and brand visibility  
+- Market sentiment can shape media narratives and expectations  
+
+**Sports Bettors & Traders**
+- Volume signals attention, not necessarily predictive accuracy  
+- Risk of herd behavior and overinterpreting liquidity  
+
+**Polymarket Platform**
+- High-volume teams drive engagement and revenue  
+- Sports contracts increase regulatory scrutiny  
+
+**Researchers**
+- Prediction markets aggregate beliefs in real time  
+- Volume may proxy attention more than information  
+
+---
+# Broader Implications
+**Societal**
 
 - Prediction markets may influence fan perception and media narratives  
 - High trading volume could reflect popularity rather than true team strength  
 - Public markets may amplify hype cycles around certain teams  
 
---
-
-#### Ethical Implications
+**Ethical Implications**
 - Access inequality: participation requires crypto & technical literacy  
 - Market participation may not represent the broader population  
 - Risk of misinterpreting market volume as “true probability”  
 - Potential for herd behavior and overreaction  
 
---
-
-#### Legal Implications
-
+**Legal Implications**
 - Sports-related prediction markets operate under CFTC oversight  
 - Regulatory status of sports betting varies by state  
 - Questions remain about:
   - Market manipulation  
   - Insider information  
   - Jurisdictional legality  
-
---
-
-## Research Limitations
-
-- Small sample size (32 teams)  
-- Single-season snapshot  
-- Volume may proxy attention, not information  
-- Correlation does not imply causation  
 
 ---
 # Limitations
@@ -286,12 +292,19 @@ summary(model)
 
 # Conclusion
 
-- Liquidity may capture attention effects  
-- Relationship appears (strong / weak / insignificant)  
-- Future work:
-  - Add multiple seasons  
-  - Include implied probabilities  
-  - Control for market size or fan base  
+### Findings:
+- Moderate-to-strong negative relationship between volume and win %
+- Correlation ≈ -0.65  
+- Statistically significant regression result  
+- Trading volume explains ~42% of variation in team performance  
+
+### Interpretation:
+In this sample, higher Polymarket trading volume is associated with **lower team win percentage**, suggesting volume may reflect popularity or speculation rather than team strength.
+
+### Future Research:
+- Include multiple seasons
+- Control for team market size or fan base  
+- Explore causal mechanisms  
 
 ---
 
