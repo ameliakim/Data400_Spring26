@@ -1,5 +1,5 @@
 ---
-title: "Mini Project: Polymarket Liquidity & NFL Performance"
+title: "Polymarket Liquidity & NFL Performance"
 author: "Amelia Kim"
 date: "2026/02/17 (updated: `r Sys.Date()`)"
 output:
@@ -17,7 +17,7 @@ library(xaringanthemer)
 style_mono_light(
   base_color = "#1f3a66",
   header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Inter", "300", "300i"),
+  text_font_google   = google_font("Helvetica", "300", "300i"),
   code_font_google   = google_font("Fira Mono")
 )
 ```
@@ -71,7 +71,7 @@ Do NFL teams with higher Polymarket trading volume exhibit higher win percentage
 
 # Polymarket Data
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='hide'}
 library(DT)
 
 nfl_volume <- data.frame(
@@ -99,6 +99,11 @@ datatable(nfl_volume,
                          dom = "tp"))
 ```
 
+```{r, echo=FALSE}
+df <- read.csv("/Users/Amelia/super_bowl_2026_polymarket.csv")
+datatable(df, options = list(pageLength = 10,lengthChange = FALSE), rownames = FALSE)
+```
+
 ---
 
 # NFL Team Performance
@@ -123,68 +128,94 @@ datatable(team_performance,
 ```
 
 ---
+```{r, echo=FALSE, results='hide'}
+library(dplyr)
+```
+---
 
 # Combined Dataset
 
 ```{r, echo=FALSE}
+df <- df %>%
+  rename(Team_Name = Team)
 
-combined_nfl <- merge(nfl_volume,team_performance, by.x = "NFL_Team", by.y = "Team_Name")
+merged_data <- left_join(df, team_performance, by = "Team_Name")
+#datatable(merged_data, options = list(pageLength = 6, lengthChange = FALSE, dom = "tp", #class = "compact"))
+head(merged_data)
 
-datatable(combined_nfl,
-          options = list(pageLength = 6,
-                         lengthChange = FALSE,
-                         dom = "tp"))
 
+# Rename implied probability safely (works regardless of ... issue)
+merged_data <- merged_data %>%
+  rename(ImpliedProbability = starts_with("ImpliedProbability"))
+
+# Ensure numeric types
+merged_data <- merged_data %>%
+  mutate(
+    VolumeUSD = as.numeric(VolumeUSD),
+    ImpliedProbability = as.numeric(ImpliedProbability),
+    Win_Pct = as.numeric(Win_Pct)
+  )
 ```
-
 ---
 
 # Exploratory Data Analysis
-
-### Summary Statistics
-
-```{r, echo=FALSE}
-summary(combined_nfl[, c("Volume_USD","Win_Pct")])
+```{r}
+summary(merged_data[, c("VolumeUSD",
+                        "ImpliedProbability",
+                        "Win_Pct")])
 ```
 
 ---
-
-# Distribution of Trading Volume
-
+#Distribution of Trading Volume
 ```{r, echo=FALSE}
-hist(combined_nfl$Volume_USD,
+hist(merged_data$VolumeUSD,
      col = "#1f3a66",
      main = "Distribution of Polymarket Trading Volume",
-     xlab = "Volume (USD)")
+     xlab = "Trading Volume (USD)")
 ```
-
 ---
-
-# Distribution of Win Percentage
-
+#Distribution of Win Percentage
 ```{r, echo=FALSE}
-hist(combined_nfl$Win_Pct,
+hist(merged_data$Win_Pct,
      col = "lightblue",
-     main = "Distribution of Win Percentage",
-     xlab = "Win %")
+     main = "Distribution of Team Win Percentage",
+     xlab = "Win Percentage")
+```
+
+```{r, echo=FALSE, results = 'hide'}
+cor_matrix <- cor(merged_data[, c("VolumeUSD",
+                                  "ImpliedProbability",
+                                  "Win_Pct")])
+
+cor_matrix
 ```
 
 ---
+#Scatterplot: Volume vs Win %
+```{r, echo=FALSE}
+plot(merged_data$VolumeUSD,
+     merged_data$Win_Pct,
+     pch = 19,
+     col = "#1f3a66",
+     xlab = "Trading Volume (USD)",
+     ylab = "Win Percentage")
 
-# Correlation
-
-```{r}
-cor(combined_nfl$Volume_USD,
-    combined_nfl$Win_Pct)
+abline(lm(Win_Pct ~ VolumeUSD,
+          data = merged_data),
+       col = "lightblue",
+       lwd = 2)
 ```
 ---
 
-# Correlation Heatmap
+#Correlation Heatmap
+```{r, echo=FALSE, fig.width=8, fig.height=6}
 
-```{r, echo=FALSE, fig.width=12, fig.height=8}
 # Select numeric variables
-numeric_data <- combined_nfl[, c("Volume_USD", "Games_Won", 
-                                 "Games_Played", "Win_Pct")]
+numeric_data <- merged_data %>%
+  select(VolumeUSD, ImpliedProbability, Win_Pct)
+
+# Remove rows with missing values (important!)
+numeric_data <- na.omit(numeric_data)
 
 # Compute correlation matrix
 corr_matrix <- cor(numeric_data)
@@ -197,53 +228,39 @@ heatmap(corr_matrix,
         main = "Correlation Heatmap")
 ```
 ---
-
-# Scatterplot: Volume vs Win %
-
+#Regression
 ```{r, echo=FALSE}
-plot(combined_nfl$Volume_USD,
-     combined_nfl$Win_Pct,
-     pch = 19,
-     col = "#1f3a66",
-     xlab = "Trading Volume (USD)",
-     ylab = "Win Percentage")
 
-abline(lm(Win_Pct ~ Volume_USD,
-          data = combined_nfl),
-       col = "lightblue",
-       lwd = 2)
+model1 <- lm(Win_Pct ~ VolumeUSD,
+             data = merged_data)
+
+summary(model1)
 ```
-
 ---
 
-# Regression Model
+#Key Findings
 
-```{r, echo=FALSE}
-model <- lm(Win_Pct ~ Volume_USD,
-            data = combined_nfl)
+- Higher trading volume is associated with lower team performance
+- Liquidity appears to reflect attention or hype, not team strength
+- Market prices contain more predictive information than trading volume
 
-summary(model)
-```
+**Limitations**
 
----
+- Only 32 teams
+- Single season  
+- Market participation may not represent entire betting population
 
-# Key Findings
-
-- Trading volume is highly concentrated among a few teams  
-- Win percentage is more evenly distributed  
-- Moderate negative correlation (-0.65) between volume and win %  
-- Regression shows statistically significant inverse relationship  
-- Volume explains ~42% of variation in team performance  
-
-### Overall Takeaway:
-Higher Polymarket trading volume is associated with *lower* team win percentage in this sample.
+**Future Research:**
+- Market variables: implied probability (time series, market open/close price), price volatility, number of traders
+- Control: fan base, payroll/salary cap spending, preseason rankings, average draft pick ranking
+- Multi-season model
 
 
 ---
 # Implications for Stakeholders
 **NFL Teams**
 - High trading volume may reflect fan engagement and brand visibility  
-- Market sentiment can shape media narratives and expectations  
+- Market sentiment  
 
 **Sports Bettors & Traders**
 - Volume signals attention, not necessarily predictive accuracy  
@@ -260,52 +277,17 @@ Higher Polymarket trading volume is associated with *lower* team win percentage 
 ---
 # Broader Implications
 **Societal**
-
 - Prediction markets may influence fan perception and media narratives  
 - High trading volume could reflect popularity rather than true team strength  
-- Public markets may amplify hype cycles around certain teams  
 
 **Ethical Implications**
-- Access inequality: participation requires crypto & technical literacy  
 - Market participation may not represent the broader population  
 - Risk of misinterpreting market volume as “true probability”  
-- Potential for herd behavior and overreaction  
 
 **Legal Implications**
-- Sports-related prediction markets operate under CFTC oversight  
+- CFTC oversight  
 - Regulatory status of sports betting varies by state  
-- Questions remain about:
-  - Market manipulation  
-  - Insider information  
-  - Jurisdictional legality  
-
----
-# Limitations
-
-- Only 32 teams (small sample size)  
-- Single season snapshot  
-- Volume may reflect popularity, not information  
-- Polymarket sports legality varies by jurisdiction  
-- Market participation may not represent entire betting population  
-
----
-
-# Conclusion
-
-### Findings:
-- Moderate-to-strong negative relationship between volume and win %
-- Correlation ≈ -0.65  
-- Statistically significant regression result  
-- Trading volume explains ~42% of variation in team performance  
-
-### Interpretation:
-In this sample, higher Polymarket trading volume is associated with **lower team win percentage**, suggesting volume may reflect popularity or speculation rather than team strength.
-
-### Future Research:
-- Include multiple seasons
-- Control for team market size or fan base  
-- Explore causal mechanisms  
-
+- Unknowns
 ---
 
 # Citations
