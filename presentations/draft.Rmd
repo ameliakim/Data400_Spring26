@@ -162,3 +162,93 @@ abline(lm(Win_Pct ~ Volume_USD, data = combined_nfl),col = "lightblue",lwd = 2)
 - [Polymarket Data](https://polymarket.com/event/super-bowl-champion-2026-731/will-the-seattle-seahawks-win-super-bowl-2026)
 
 
+
+
+### Summary Statistics
+
+```{r, echo=FALSE}
+summary(merged_data[, c("VolumeUSD",
+                        "ImpliedProbability(%)",
+                        "Win_Pct")])
+
+```
+
+---
+
+# Distribution of Trading Volume
+
+```{r, echo=FALSE}
+hist(combined_nfl$Volume_USD,
+     col = "#1f3a66",
+     main = "Distribution of Polymarket Trading Volume",
+     xlab = "Volume (USD)")
+```
+
+---
+
+# Distribution of Win Percentage
+
+```{r, echo=FALSE}
+hist(combined_nfl$Win_Pct,
+     col = "lightblue",
+     main = "Distribution of Win Percentage",
+     xlab = "Win %")
+```
+
+---
+
+# Correlation
+
+```{r}
+cor(combined_nfl$Volume_USD,
+    combined_nfl$Win_Pct)
+```
+---
+
+# Correlation Heatmap
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+# Select numeric variables
+numeric_data <- combined_nfl[, c("Volume_USD", "Games_Won", 
+                                 "Games_Played", "Win_Pct")]
+
+# Compute correlation matrix
+corr_matrix <- cor(numeric_data)
+
+# Create heatmap
+heatmap(corr_matrix,
+        col = colorRampPalette(c("#1f3a66", "white", "lightblue"))(20),
+        scale = "none",
+        margins = c(8,8),
+        main = "Correlation Heatmap")
+```
+---
+
+# Scatterplot: Volume vs Win %
+
+```{r, echo=FALSE}
+plot(combined_nfl$Volume_USD,
+     combined_nfl$Win_Pct,
+     pch = 19,
+     col = "#1f3a66",
+     xlab = "Trading Volume (USD)",
+     ylab = "Win Percentage")
+
+abline(lm(Win_Pct ~ Volume_USD,
+          data = combined_nfl),
+       col = "lightblue",
+       lwd = 2)
+```
+
+---
+
+# Regression Model
+
+```{r, echo=FALSE}
+model <- lm(Win_Pct ~ Volume_USD,
+            data = combined_nfl)
+
+summary(model)
+```
+
+
