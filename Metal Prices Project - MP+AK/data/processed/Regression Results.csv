@@ -1,0 +1,52 @@
+Model,Metal,Variable,Coefficient,p_value,Adj_R2,N,Notes
+Expanded HAC Regression,Aluminum,Lag_Return,0.1490046827172267,0.03839845124614317,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,Oil_LogReturn,0.1156037005440497,0.004272190451131848,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,Delta_VIX,-0.0005007123566066028,0.613987272943648,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,Lag_TermSpread,0.0006792416009877491,0.7898632666823464,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,Delta_UNRATE,-0.0106838502530353,0.04734370649861057,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,Broad_Dollar_LogReturn,-1.174815282042388,2.94725794394902e-05,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Aluminum,OECD_IP_Growth_MoM_pct,-0.005331694611055804,0.1496480089451692,0.2598072561984733,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Lag_Return,0.1069397941244106,0.06092429452729548,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Oil_LogReturn,0.09501367511136008,0.0006027581915004291,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Delta_VIX,-0.001214523161321535,0.1967730212313336,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Lag_TermSpread,-0.001979901304670914,0.4503852509916014,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Delta_UNRATE,0.008850427173342312,0.1269278824562218,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,Broad_Dollar_LogReturn,-1.503858468451928,5.018820792835535e-06,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Copper,OECD_IP_Growth_MoM_pct,0.004407389570886468,0.2515690598487682,0.3359655531857383,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Lag_Return,0.2716052973319362,3.097000714065482e-08,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Oil_LogReturn,0.1218663684980904,0.1965357577738897,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Delta_VIX,-0.001115521078392829,0.4127516756658175,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Lag_TermSpread,0.002082791372686892,0.6765533909848221,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Delta_UNRATE,0.001244815219517742,0.8736140200557221,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,Broad_Dollar_LogReturn,-1.651545999274516,9.599035533531202e-05,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Nickel,OECD_IP_Growth_MoM_pct,-0.003746692491239967,0.5172882818470259,0.213005637193771,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Lag_Return,0.09539285247244729,0.2058497089911319,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Oil_LogReturn,0.08373990089065832,0.03597351056465718,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Delta_VIX,-0.001498924722877401,0.1274535255477439,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Lag_TermSpread,0.001142268964084481,0.7841615929577046,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Delta_UNRATE,0.005145701548002696,0.460203168373896,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,Broad_Dollar_LogReturn,-1.705087729024597,1.803751513769091e-05,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Zinc,OECD_IP_Growth_MoM_pct,0.0001817442300223724,0.9672142859205632,0.2126009059586647,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Lag_Return,0.1942576530460663,0.003249690204127434,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Oil_LogReturn,-0.01917528685793387,0.5344198796025239,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Delta_VIX,0.001696600862145568,0.02749896411483756,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Lag_TermSpread,-0.001996446743099491,0.3213795342806608,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Delta_UNRATE,0.01163797890146057,0.01273764314413105,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,Broad_Dollar_LogReturn,-1.318580902877054,1.262167606506202e-11,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Gold,OECD_IP_Growth_MoM_pct,0.002783773602884062,0.2666881419241894,0.248889937281721,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Lag_Return,0.1858508010816176,0.005911459406483645,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Oil_LogReturn,0.05773720774172696,0.3984737477534922,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Delta_VIX,-0.001106605190548654,0.3926714898265957,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Lag_TermSpread,-0.001801502010174253,0.6409404754565216,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Delta_UNRATE,0.008703918023348077,0.435311945316843,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,Broad_Dollar_LogReturn,-2.151874376869051,2.341296323529713e-09,0.2470835692727121,189.0,Dependent variable is monthly log return
+Expanded HAC Regression,Silver,OECD_IP_Growth_MoM_pct,0.002993045398441194,0.6221530709424948,0.2470835692727121,189.0,Dependent variable is monthly log return
+Copper Inventory Model,Copper,const,0.005932552244151307,0.08979965573219023,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Copper_LogReturn_Lag1,0.09122222579987255,0.1086439388818564,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Oil_LogReturn,0.09659453188023397,0.0001420335750273111,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Delta_VIX,-0.001122991693691597,0.2256329673424383,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Lag_TermSpread,-0.002495099462374957,0.3344580939392643,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Delta_UNRATE,0.009507435750565446,0.09308922025949372,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,Broad_Dollar_LogReturn,-1.400805659305603,4.067219842792735e-05,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,OECD_Industrial_Production_Growth_MoM_pct,0.004391493572952915,0.2258298592779727,,,HAC standard errors; copper return model including LME stocks
+Copper Inventory Model,Copper,LME_Copper_Stocks_LogChange,-0.03445463179307508,0.006945898155612105,,,HAC standard errors; copper return model including LME stocks

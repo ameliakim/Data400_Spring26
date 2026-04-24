@@ -1,0 +1,41 @@
+Metal,Source,Release_Date,Year,Series,Value,Unit,Notes
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2021,Cleantech demand,6002.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2021,Other uses,18944.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2021,Total demand,24946.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2021,Secondary supply and reuse,4123.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2021,Primary supply requirements,20851.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2024,Cleantech demand,7737.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2024,Other uses,18980.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2024,Total demand,26717.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2024,Secondary supply and reuse,4441.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2024,Primary supply requirements,22503.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2030,Cleantech demand,10910.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2030,Other uses,20438.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2030,Total demand,31348.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2030,Secondary supply and reuse,5431.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2030,Primary supply requirements,25917.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2040,Cleantech demand,12162.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2040,Other uses,21975.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2040,Total demand,34137.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2040,Secondary supply and reuse,8702.0,kt,Exact values from IEA Copper page
+Copper,IEA Global Critical Minerals Outlook 2025,2025-05-21 00:00:00,2040,Primary supply requirements,25428.0,kt,Exact values from IEA Copper page
+Copper,ICSG copper market forecast press release,2025-04-28 00:00:00,2025,Refined market balance,289.0,kt,Surplus forecast in April 2025 release
+Copper,ICSG copper market forecast press release,2025-10-08 00:00:00,2025,Refined market balance,178.0,kt,Surplus forecast in October 2025 release
+Copper,ICSG copper market forecast press release,2025-04-28 00:00:00,2026,Refined market balance,209.0,kt,Surplus forecast in April 2025 release
+Copper,ICSG copper market forecast press release,2025-10-08 00:00:00,2026,Refined market balance,-150.0,kt,Deficit forecast in October 2025 release
+Silver,Silver Institute / World Silver Survey 2025,2025-04-16 00:00:00,2024,Total demand,1160.0,Moz,2024 actual; 1.16 billion ounces
+Silver,Silver Institute / World Silver Survey 2025,2025-04-16 00:00:00,2024,Total supply,1011.1,Moz,Implied by 2024 demand minus 148.9 Moz deficit
+Silver,Silver Institute / World Silver Survey 2025,2025-04-16 00:00:00,2024,Industrial demand,680.5,Moz,2024 actual
+Silver,Silver Institute / World Silver Survey 2025,2025-04-16 00:00:00,2024,Market balance,-148.9,Moz,Deficit
+Silver,Silver Institute January 2025 market forecast,2025-01-29 00:00:00,2025,Total demand,1200.0,Moz,2025 forecast; 1.20 billion ounces
+Silver,Silver Institute January 2025 market forecast,2025-01-29 00:00:00,2025,Total supply,1051.0,Moz,Implied by 2025 demand minus 149.0 Moz deficit
+Silver,Silver Institute January 2025 market forecast,2025-01-29 00:00:00,2025,Industrial demand,700.0,Moz,2025 forecast; surpasses 700 Moz
+Silver,Silver Institute January 2025 market forecast,2025-01-29 00:00:00,2025,Market balance,-149.0,Moz,Deficit
+Silver,Silver Institute / Oxford Economics tech-demand report,2025-12-01 00:00:00,2014,Solar PV share of industrial demand,11.0,%,Share of silver industrial demand
+Silver,Silver Institute / Oxford Economics tech-demand report,2025-12-01 00:00:00,2024,Solar PV share of industrial demand,29.0,%,Share of silver industrial demand
+Silver,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,18.0,%,Cross-sectional consumption change used for context
+Copper,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,12.0,%,Cross-sectional consumption change used for context
+Aluminum,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,-9.0,%,Cross-sectional consumption change used for context
+Zinc,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,-10.0,%,Cross-sectional consumption change used for context
+Nickel,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,-13.0,%,Cross-sectional consumption change used for context
+Gold,USGS Mineral Commodity Summaries 2026,2026,2021-2025,Consumption change 2021-2025,-43.0,%,Cross-sectional consumption change used for context

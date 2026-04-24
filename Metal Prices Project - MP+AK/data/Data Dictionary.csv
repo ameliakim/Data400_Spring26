@@ -1,0 +1,116 @@
+file,column,description,file_description
+data/raw/Prices Monthly Source.csv,Month,Month of observation.,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Oil_USD_per_bbl,Crude oil price in U.S. dollars per barrel.,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Aluminum_USD_per_mt,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Copper_USD_per_mt,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Nickel_USD_per_mt,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Zinc_USD_per_mt,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Gold_USD_per_troy_oz,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/Prices Monthly Source.csv,Silver_USD_per_troy_oz,,Monthly oil and six-metal price source extracted from the master workbook.
+data/raw/VIX Raw.csv,observation_date,Original source observation date.,Original VIX daily series used to build monthly volatility controls.
+data/raw/VIX Raw.csv,VIXCLS,,Original VIX daily series used to build monthly volatility controls.
+data/raw/Yield Spread Raw.csv,observation_date,Original source observation date.,Original 10Y-2Y Treasury spread daily series.
+data/raw/Yield Spread Raw.csv,T10Y2Y,,Original 10Y-2Y Treasury spread daily series.
+data/raw/Unemployment Raw.csv,observation_date,Original source observation date.,Original monthly unemployment rate series.
+data/raw/Unemployment Raw.csv,UNRATE,U.S. unemployment rate.,Original monthly unemployment rate series.
+data/raw/SP500 Raw.csv,observation_date,Original source observation date.,Original S&P 500 series used for robustness work.
+data/raw/SP500 Raw.csv,SP500,,Original S&P 500 series used for robustness work.
+data/raw/Broad Dollar Source.csv,Month,Month of observation.,Monthly broad U.S. dollar index used in the expanded regressions.
+data/raw/Broad Dollar Source.csv,Broad_Dollar_Index,Nominal broad U.S. dollar index.,Monthly broad U.S. dollar index used in the expanded regressions.
+data/raw/OECD Industrial Production Source.csv,Month,Month of observation.,Monthly OECD industrial production growth series.
+data/raw/OECD Industrial Production Source.csv,OECD_Industrial_Production_Growth_MoM_pct,"Monthly OECD industrial production growth, percent.",Monthly OECD industrial production growth series.
+data/raw/Copper LME Stocks Source.csv,Month,Month of observation.,Monthly average LME copper stocks.
+data/raw/Copper LME Stocks Source.csv,LME_Copper_Stocks_tonnes,"Monthly average LME copper stocks, tonnes.",Monthly average LME copper stocks.
+data/raw/Copper Structural Source.csv,Source,Source report or provider.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Release_Date,Release date or year of source.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Section,,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Year,Calendar year.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Series,Series or variable name.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Value,Observed value.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Unit,Measurement unit.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Copper Structural Source.csv,Notes,Notes on interpretation.,Copper structural inputs compiled from IEA and ICSG.
+data/raw/Silver Structural Source.csv,Source,Source report or provider.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Release_Date,Release date or year of source.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Year,Calendar year.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Series,Series or variable name.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Value,Observed value.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Unit,Measurement unit.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/Silver Structural Source.csv,Notes,Notes on interpretation.,Silver structural inputs compiled from Silver Institute releases.
+data/raw/USGS Selected Metals.csv,Mineral_Commodity,Mineral commodity name.,USGS cross-sectional metal context table.
+data/raw/USGS Selected Metals.csv,Pch_Consumption_2021_2025,Percent change in consumption from 2021 to 2025.,USGS cross-sectional metal context table.
+data/raw/USGS Selected Metals.csv,CM_List_2025,Critical minerals list flag.,USGS cross-sectional metal context table.
+data/processed/Monthly Model Complete.csv,Month,Month of observation.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Oil_USD_per_bbl,Crude oil price in U.S. dollars per barrel.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Oil_LogReturn,Monthly log return of oil price.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Aluminum_USD_per_mt,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Aluminum_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Copper_USD_per_mt,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Copper_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Nickel_USD_per_mt,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Nickel_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Zinc_USD_per_mt,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Zinc_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Gold_USD_per_troy_oz,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Gold_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Silver_USD_per_troy_oz,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Silver_LogReturn,,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,VIX_MonthlyAvg,Monthly average VIX.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Delta_VIX,Month-over-month change in VIX.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,TermSpread_MonthlyAvg,Monthly average 10Y-2Y Treasury spread.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Lag_TermSpread,Lagged term spread used in regressions.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,UNRATE,U.S. unemployment rate.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Delta_UNRATE,Month-over-month change in unemployment rate.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,SP500_EOM,End-of-month S&P 500 level.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,SP500_LogReturn,Monthly log return of S&P 500.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Broad_Dollar_Index,Nominal broad U.S. dollar index.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,Broad_Dollar_LogReturn,Monthly log return of broad dollar index.,Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,OECD_Industrial_Production_Growth_MoM_pct,"Monthly OECD industrial production growth, percent.",Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,LME_Copper_Stocks_tonnes,"Monthly average LME copper stocks, tonnes.",Complete-case monthly model dataset used for regressions.
+data/processed/Monthly Model Complete.csv,LME_Copper_Stocks_LogChange,Monthly log change in LME copper stocks.,Complete-case monthly model dataset used for regressions.
+data/processed/Metal Panel Long.csv,Month,Month of observation.,Long-format panel used for descriptive charts and correlation work.
+data/processed/Metal Panel Long.csv,Metal,Metal name.,Long-format panel used for descriptive charts and correlation work.
+data/processed/Metal Panel Long.csv,Price,Observed metal price.,Long-format panel used for descriptive charts and correlation work.
+data/processed/Metal Panel Long.csv,LogReturn,Monthly log return of price.,Long-format panel used for descriptive charts and correlation work.
+data/processed/Metal Panel Long.csv,Norm_2000M01_100,Indexed price level with 2000-01 = 100.,Long-format panel used for descriptive charts and correlation work.
+data/processed/Structural Inputs.csv,Metal,Metal name.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Source,Source report or provider.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Release_Date,Release date or year of source.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Year,Calendar year.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Series,Series or variable name.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Value,Observed value.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Unit,Measurement unit.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Structural Inputs.csv,Notes,Notes on interpretation.,"Combined copper, silver, and USGS structural inputs."
+data/processed/Regression Results.csv,Model,Model name.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,Metal,Metal name.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,Variable,Right-hand-side variable or coefficient name.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,Coefficient,Estimated coefficient.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,p_value,P-value associated with the coefficient.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,Adj_R2,Adjusted R-squared for the model.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,N,Model sample size.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Regression Results.csv,Notes,Notes on interpretation.,Tidy regression results table for the expanded model and copper inventory model.
+data/processed/Long Term Paths.csv,Metal,Metal name.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Scenario,Named scenario.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Year,Calendar year.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Phase,Forecast phase.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Demand_Growth_pct,"Assumed annual demand growth rate, percent.",Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Supply_Growth_pct,"Assumed annual supply growth rate, percent.",Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Trade_Retention_Wedge_pp,Availability reduction wedge in percentage points.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Substitution_Relief_pp,Offset from substitution or thrifting in percentage points.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Effective_Imbalance_pp,Net imbalance used to map into price pressure.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Demand_Level,Projected demand level.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Supply_Level,Projected supply level.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Availability_Index,Projected availability index.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Annual_Price_Growth_pct,"Projected annual price growth rate, percent.",Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Price,Observed metal price.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Price_Unit,Unit of price.,Deterministic long-term scenario paths through 2050.
+data/processed/Long Term Paths.csv,Volume_Unit,Unit of demand and supply levels.,Deterministic long-term scenario paths through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Metal,Metal name.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Year,Calendar year.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Price_p10,10th percentile simulated price.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Price_p25,25th percentile simulated price.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Price_p50,Median simulated price.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Price_p75,75th percentile simulated price.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Price_p90,90th percentile simulated price.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Availability_p10,10th percentile simulated availability index.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Availability_p50,Median simulated availability index.,Monte Carlo yearly percentile outputs through 2050.
+data/processed/Monte Carlo Yearly Percentiles.csv,Availability_p90,90th percentile simulated availability index.,Monte Carlo yearly percentile outputs through 2050.
